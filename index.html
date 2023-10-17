@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>João Ramos Portfolio</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/style-mobile.css" />
+    <link rel="stylesheet" href="CSS/imports.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="functions.js"></script>
+  </head>
+  <body id="header-section">
+    <header class="container-fluid mx-auto">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand ms-xl-5 ms-4"
+            onclick="scrollIntoSection('header-section')"
+            >JR</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="custom-navbar-toggler-icon">
+              <i class="bi bi-list"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0 d-flex">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  onclick="scrollIntoSection('about-section')"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#sebastiao_alves"
+                      >Sebastião Alves</a
+                    >
+                  </li>
+                  <div class="dropdown-divider"></div>
+                  <li>
+                    <a class="dropdown-item" href="#sebastiao_alves"
+                      >Another action</a
+                    >
+                  </li>
+                  <div class="dropdown-divider"></div>
+                  <li>
+                    <a class="dropdown-item" href="#sebastiao_alves"
+                      >Something else here</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  onclick="scrollIntoSection('footer-section')"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div
+          class="col-12 col-lg-6 hero-text-wrapper"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h6 class="mt-5">Welcome to my Portfolio!</h6>
+          <h1 class="hero-h1">
+            Hello, my name is <span class="hero-span">João Ramos</span>
+          </h1>
+          <p class="text-thin">
+            Junior Fullstack Web Developer with a passion for coding, gaming and
+            some techno music.
+          </p>
+          <button class="button-css cv-button">
+            <i class="bi bi-download"></i> Download my CV</button
+          ><button class="button-css hire-button">Hire me</button>
+        </div>
+        <div
+          class="col-12 col-lg-6 mt-5 hero-img-wrapper"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <img src="img/img_site/hero-img.svg" alt="hero-img" />
+        </div>
+        <div class="row" style="margin-left: 0px">
+          <div class="col-12 scroll-wrapper text-center">
+            <h4>Interested? Keep scrolling!</h4>
+            <a>
+              <div id="mouse-scroll">
+                <div>
+                  <span class="down-arrow-1"></span>
+                  <span class="down-arrow-2"></span>
+                  <span class="down-arrow-3"></span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 section-wrapper" id="about-section">
+          <h1
+            class="section-title"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            A little about me
+          </h1>
+          <div class="about-content-wrapper">
+            <div data-aos="fade-right" data-aos-duration="1000">
+              <p>
+                <img
+                  class="about-img"
+                  src="img/img_site/proud.svg"
+                  alt="proud"
+                />
+                I am a 25-year-old junior full-stack web developer from
+                Portugal. I recently completed a 7-month bootcamp at CODEMASTER
+                and and I found my biggest passion: CODING.
+                <br />
+                Due to my passion for coding, I am now seeking an internship or
+                job to improve my knowledge and also start my career as a web
+                developer.
+              </p>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+              <p>
+                <img
+                  class="about-img-right"
+                  src="img/img_site/gaming.svg"
+                  alt="proud"
+                />
+                I am also a gamer, on my free time you can find me on games
+                like: Counter-Strike, Overwatch, World of Warcraft, etc!
+              </p>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+              <p>
+                <img
+                  class="about-img"
+                  src="img/img_site/music.svg"
+                  alt="proud"
+                />
+                One of my another interests is music, I love to listen to the
+                harder styles, like: Hardstyle, Hardcore, Techno, Hard Techno,
+                etc!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-12 section-wrapper"
+          id="projects-section"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          <h1 class="section-title">Some Projects I've Worked On</h1>
+          <div id="sebastiao_alves"></div>
+          <br />
+          <div class="projects-content-wrapper">
+            <div class="project-card">
+              <div class="bordered-image">
+                <img
+                  src="img/img_site/sebastiao_alves1.png"
+                  alt="sebastiao_alves1.png"
+                />
+              </div>
+              <h1 class="project-card-title my-4">Sebastião Alves</h1>
+              <div class="project-card-text">
+                <p class="text-thin">
+                  This website was made by the teacher of the bootcamp and I
+                  cloned it as the final project of the bootcamp.
+                </p>
+                <br />
+                <h3>Technologies Used:</h3>
+                <br />
+                <button class="button-card-size text-thin">HTML</button>
+                <button class="button-card-size text-thin">CSS</button>
+                <button class="button-card-size text-thin">BOOTSTRAP</button>
+                <button class="button-card-size text-thin">JS</button>
+                <button class="button-card-size text-thin">PHP</button>
+                <button class="button-card-size text-thin">MYSQL</button>
+              </div>
+              <div class="project-card-href">
+                <button class="button-css-card me-3">DEMO</button>
+                <button class="button-css-card">CODE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-wrapper" id="footer-section">
+            <h1
+              class="section-title"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              Let's talk
+            </h1>
+            <form
+              action="mailto:joaoramos13198@gmail.com"
+              target="_blank"
+              id="form-css"
+            >
+              <img src="img/img_site/talk.svg" alt="talk" />
+              <button
+                class="button-css-card mt-0"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                Talk With Me!
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <hr data-aos="fade-down" data-aos-duration="1000" class="my-5" />
+      <div class="row">
+        <div
+          class="col-12 col-md-6 text-center"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h1>Contacts</h1>
+          <div class="row">
+            <div class="col-12 col-md-6 text-center">Phone: +351 918414906</div>
+            <div class="col-6 text-center">
+              E-mail: joaoramos13198@gmail.com
+            </div>
+          </div>
+        </div>
+        <hr class="d-sm-block d-md-none my-3" />
+        <div
+          class="col-6 text-center"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <h1>Socials:</h1>
+          <div class="row">
+            <div class="col-12 social-wrapper">
+              <a href="https://www.instagram.com/jgramos5/" target="_blank">
+                <img
+                  class="socials-css"
+                  src="img/img_site/instagram.png"
+                  alt="instagram"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jo%C3%A3o-gr%C3%A1cio-ramos-6851b4263/"
+                target="_blank"
+              >
+                <img
+                  class="socials-css"
+                  src="img/img_site/linkedin.png"
+                  alt="linkedin"
+                />
+              </a>
+              <a href="https://github.com/Hakki13198" target="_blank">
+                <img
+                  class="socials-css"
+                  style="background-color: white; border-radius: 100%"
+                  src="img/img_site/github.png"
+                  alt="github"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center mt-5">
+          <p>© 2023 João Ramos. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

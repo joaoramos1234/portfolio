@@ -1,0 +1,100 @@
+@media screen and (max-width: 1200px) {
+  .dropdown-menu.show {
+    max-width: 100% !important;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+  main {
+    width: 90% !important;
+  }
+  .hero-text-wrapper,
+  .hero-img-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  #mouse-scroll {
+    bottom: -450px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #mouse-scroll {
+    bottom: -350px;
+  }
+
+  .hero-text-wrapper {
+    text-align: left;
+  }
+
+  .hero-text-wrapper button,
+  .project-card-href button {
+    display: block;
+    margin: 40px auto;
+    width: 100%;
+  }
+
+  #form-css {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  #form-css button {
+    width: 100%;
+  }
+
+  #form-css img {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  footer .col-6 {
+    width: 100% !important;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  textarea,
+  input {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about-content-wrapper {
+    margin: auto;
+    gap: 50px;
+  }
+  .about-content-wrapper img,
+  .about-content-wrapper p {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0;
+  }
+
+  .project-card-text {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .project-card-title {
+    text-align: center;
+  }
+
+  .button-card-size {
+    margin: 15px;
+    color: #fff !important;
+  }
+}

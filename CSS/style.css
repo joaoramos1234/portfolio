@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.container {
+  width: 75%;
+}
+body {
+  background-color: black;
+}
+
+.navbar {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.border-bottom {
+  border-bottom: 2px solid #1f1f1f !important;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:active,
+.navbar-brand:focus {
+  font-family: "Pacifico", cursive;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 45px;
+  text-decoration: underline 3px #ffc200;
+  transition-duration: 0.5s;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.5);
+}
+
+.nav-link,
+.color-mode {
+  margin: auto 20px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.nav-link.active:hover,
+.hero-span {
+  color: #ffc200 !important;
+}
+
+.bi-list {
+  font-size: 40px !important;
+}
+
+.nav-link,
+.nav-link.active,
+.nav-link:active {
+  color: #fff !important;
+}
+
+.nav-item .nav-link::after {
+  display: none;
+}
+
+.dropdown-menu,
+.dropdown-divider {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu.show {
+  border-radius: 0;
+  max-width: 200px !important;
+  margin: auto;
+  background-color: #fffefe;
+}
+
+.dropdown-item {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  transition: 0.3s;
+  padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+  background-color: #ffc40041;
+  color: #ffc200;
+}
+
+.bi {
+  font-size: 24px;
+}
+
+main {
+  margin-top: 150px !important;
+}
+
+.hero-text-wrapper,
+.hero-img-wrapper {
+  width: 50%;
+  height: 100%;
+}
+
+.hero-h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.text-thin {
+  font-weight: 300 !important;
+  color: #5b5b5b !important;
+}
+
+.hero-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button-css,
+.button-css-card {
+  background-color: #ffc200;
+  border: 1px solid #ffc200;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s;
+  margin-top: 30px;
+  transition-duration: 0.4s;
+}
+
+.button-css:active {
+  transform: scale(0.93);
+}
+
+.cv-button {
+  background-color: transparent !important;
+  margin-right: 20px;
+  color: #fff !important;
+}
+
+.hire-button:hover {
+  border: 1px solid #ffc200;
+  background-color: transparent;
+  color: #fff;
+}
+
+.cv-button i {
+  transition-duration: 0.4s;
+}
+
+.cv-button:hover,
+.cv-button:hover i {
+  background-color: #ffc200 !important;
+  color: #000 !important;
+}
+
+.bi-download {
+  font-size: 17px;
+}
+
+.scroll-wrapper {
+  margin-top: 125px;
+}
+
+#mouse-scroll {
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  z-index: 900;
+}
+
+#mouse-scroll span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  margin: 0 0 3px 5px;
+  cursor: pointer;
+}
+
+#mouse-scroll .down-arrow-1,
+#mouse-scroll .down-arrow-2,
+#mouse-scroll .down-arrow-3 {
+  animation: mouse-scroll 1s infinite;
+}
+
+#mouse-scroll .down-arrow-1 {
+  animation-delay: 0.1s;
+}
+
+#mouse-scroll .down-arrow-2 {
+  animation-delay: 0.2s;
+}
+
+#mouse-scroll .down-arrow-3 {
+  animation-delay: 0.3s;
+}
+
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section-wrapper {
+  margin-top: 250px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 100px;
+  text-decoration: underline 3px #ffc200;
+}
+
+.about-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  width: 100%;
+}
+
+.about-content-wrapper div {
+  min-height: 230px;
+}
+
+.about-content-wrapper p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #5b5b5b;
+}
+
+.about-img {
+  width: 33%;
+  float: left;
+  margin-right: 40px;
+  border-left: 5px solid #ffc200;
+  padding-left: 20px;
+}
+
+.about-img-right {
+  width: 33%;
+  float: right;
+  text-align: end;
+  margin-left: 40px;
+  border-right: 5px solid #ffc200;
+  padding-right: 20px;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.bordered-image {
+  position: relative;
+  transition-duration: 0.7s;
+}
+
+.bordered-image:hover {
+  transform: scale(1.05);
+}
+
+.bordered-image:hover .button-css,
+.button-css-card {
+  background-color: #ffc200;
+  border: 2px solid #ffc200;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s;
+  margin-top: 30px;
+  transition-duration: 0.4s;
+}
+
+.project-card-href {
+  transition-duration: 0.5s;
+}
+
+.button-css-card {
+  width: 180px;
+}
+
+.button-css-card:hover {
+  background-color: transparent;
+  border: 2px solid #ffc200;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s;
+  transition-duration: 0.4s;
+}
+
+.button-card-size {
+  width: 100px !important;
+  height: 100%;
+  padding: 10px !important;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #5b5b5b;
+  background-color: transparent;
+  transition-duration: 0.4s;
+}
+
+.button-card-size:hover {
+  color: #fff !important;
+}
+
+.project-card-title {
+  margin-top: 60px;
+}
+
+.button-css {
+  background-color: #ffc200;
+  border: 1px solid #ffc200;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s;
+  margin-top: 30px;
+  transition-duration: 0.4s;
+}
+
+#form-css {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 150px;
+}
+
+#form-css img {
+  width: 33%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+}
+#instagram {
+  background-image: url("img/img_site/instagram.svg");
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+#instagram:hover {
+  color: #fff;
+}
+
+.socials-css {
+  width: 30px;
+}
